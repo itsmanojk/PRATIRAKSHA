@@ -1,0 +1,192 @@
+================================================================================
+                    PRATIRAKSHA - QUICK START GUIDE
+         One-Step Commands to Run Your Project (Simple Steps)
+================================================================================
+
+FASTEST WAY TO RUN THE PROJECT:
+================================================================================
+
+OPTION 1: Windows Batch File (Simplest) ✓ RECOMMENDED
+────────────────────────────────────────────────────
+1. Open File Explorer
+2. Navigate to: c:\Desktop\PRATIRAKSHA-Production
+3. Double-click: START_PROJECT.bat
+4. Wait 10 seconds
+5. Browser opens at: http://localhost:3000
+
+That's it! The entire project is running.
+
+────────────────────────────────────────────────────────────────────────────
+
+OPTION 2: PowerShell Command (Advanced)
+─────────────────────────────────────────
+1. Open PowerShell in the project folder
+2. Run this command:
+
+   & "C:\Desktop\PRATIRAKSHA-Production\START_PROJECT.ps1"
+
+3. Browser opens automatically at: http://localhost:3000
+
+────────────────────────────────────────────────────────────────────────────
+
+OPTION 3: Terminal/CMD One-Liner (For Command Line Users)
+───────────────────────────────────────────────────────────
+Run this single command in CMD:
+
+   cd c:\Desktop\PRATIRAKSHA-Production && START_PROJECT.bat
+
+────────────────────────────────────────────────────────────────────────────
+
+WHAT HAPPENS WHEN YOU RUN THE COMMAND:
+================================================================================
+
+STEP 1: Backend Server Starts (Automatic)
+   ✓ Port: 5002
+   ✓ Status: Initializes database & loads ML model
+   ✓ Output: "✓ BACKEND SERVER READY"
+   ✓ Time: 2-3 seconds
+
+STEP 2: Frontend Server Starts (Automatic)
+   ✓ Port: 3000
+   ✓ Status: React compiles and runs
+   ✓ Output: "Compiled successfully!"
+   ✓ Time: 3-5 seconds
+
+STEP 3: Browser Opens (Automatic)
+   ✓ Dashboard loads at: http://localhost:3000
+   ✓ Shows real-time threat detection
+   ✓ Updates every 23-25 seconds
+   ✓ Displays threat statistics
+
+STEP 4: Threat Detection Runs (Automatic)
+   ✓ Detects ransomware, cryptolocker, locky, wannacry
+   ✓ Shows confidence percentage
+   ✓ Logs to database
+   ✓ Updates dashboard in real-time
+
+================================================================================
+
+MONITORING THE PROJECT:
+================================================================================
+
+BACKEND CONSOLE (Automatic Window)
+   Shows: Network detection events
+   Updates: Every 23-25 seconds
+   Example: 🚨 [1] Ransomware | 192.168.112.172 | Conf: 88%
+
+FRONTEND CONSOLE (Automatic Window)
+   Shows: React compilation status
+   Updates: Real-time threat updates via WebSocket
+   Example: Connected, receiving threat data...
+
+DASHBOARD (Browser - http://localhost:3000)
+   Shows: Live threat statistics
+   Updates: Real-time threat detections
+   Features: Threat log, statistics, network flow
+
+================================================================================
+
+STOPPING THE PROJECT:
+================================================================================
+
+Method 1: Close the Windows
+   1. Close the "PRATIRAKSHA-Backend" window
+   2. Close the "PRATIRAKSHA-Frontend" window
+   3. Project stops
+
+Method 2: Use Ctrl+C
+   1. Click in a server window
+   2. Press Ctrl+C
+   3. Type 'Y' and Enter to confirm
+
+Method 3: Task Manager
+   1. Open Task Manager (Ctrl+Shift+Esc)
+   2. Find "python" or "node" processes
+   3. Right-click → End Task
+
+================================================================================
+
+ACCESSING THE PROJECT:
+================================================================================
+
+Dashboard (Main UI):
+   URL: http://localhost:3000
+   Browser: Chrome, Firefox, Edge (any modern browser)
+   Shows: Real-time threat detection, statistics, alerts
+
+Backend API:
+   URL: http://localhost:5002
+   Endpoints:
+      • Health: /health
+      • Stats: /api/stats
+      • WebSocket: /socket.io
+
+Direct Links:
+   ✓ Dashboard: http://localhost:3000
+   ✓ Backend: http://localhost:5002/health
+   ✓ Stats: http://localhost:5002/api/stats
+
+================================================================================
+
+TROUBLESHOOTING:
+================================================================================
+
+Port Already in Use?
+   Error: "Address already in use"
+   Solution: Kill existing process or wait 30 seconds before restarting
+
+Backend Won't Start?
+   Error: "Python not found" or "No module named flask"
+   Solution: Install Python dependencies
+   Command: pip install -r backend/requirements.txt
+
+Frontend Won't Start?
+   Error: "npm not found" or "Module not found"
+   Solution: Install npm packages
+   Command: cd frontend && npm install
+
+Browser Won't Open?
+   Solution: Manually open http://localhost:3000
+
+No Threats Showing?
+   Normal: Wait 30 seconds for first threat detection
+   Check: Backend console window for "🚨" messages
+
+================================================================================
+
+SYSTEM REQUIREMENTS:
+================================================================================
+
+Minimum:
+   ✓ Python 3.8+ (installed)
+   ✓ Node.js + npm (installed)
+   ✓ 500 MB RAM available
+   ✓ 2 GB disk space
+
+Ports Required:
+   ✓ Port 5002 (Backend)
+   ✓ Port 3000 (Frontend)
+   ✓ No firewalls blocking these ports
+
+================================================================================
+
+NEXT STEPS:
+================================================================================
+
+1. Run: START_PROJECT.bat (double-click)
+2. Wait: 10 seconds for both servers
+3. View: Dashboard at http://localhost:3000
+4. Monitor: Real-time threat detection
+5. Read: PROJECT_DOCUMENTATION.md for advanced info
+
+================================================================================
+
+FOR MORE INFORMATION:
+================================================================================
+
+Detailed Guide: PROJECT_DOCUMENTATION.md
+Quick Q&A: PROJECT_QA_REFERENCE.txt
+GitHub: https://github.com/itsmanojk/PRATIRAKSHA
+Issues: Report problems in GitHub Issues
+
+================================================================================
