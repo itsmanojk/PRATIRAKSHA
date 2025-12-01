@@ -1,0 +1,33 @@
+# Large files
+*.csv
+*.pth
+*.h5
+*.pkl
+data/
+logs/
+
+# Node modules
+node_modules/
+frontend/node_modules/
+npm-debug.log
+
+# Build and cache
+frontend/build/
+frontend/.cache/
+dist/
+.cache/
+__pycache__/
+*.pyc
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment
+.env
+.env.local

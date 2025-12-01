@@ -1,0 +1,26 @@
+{
+  "model_type": "NetworkFlowGCN",
+  "model_architecture": "Graph Convolutional Network with Attention",
+  "input_dim": 50,
+  "hidden_dim": 256,
+  "num_classes": 5,
+  "class_names": ["Benign", "Cryptolocker", "Locky", "Ransomware", "WannaCry"],
+  "parameter_count": 452485,
+  "accuracy_percentage": 78.47,
+  "final_test_accuracy": 0.7847,
+  "best_val_accuracy": 0.7747,
+  "description": "GCN-based ransomware threat detector trained on balanced dataset with 78.47% test accuracy",
+  "config": {
+    "hidden_dim": 256,
+    "dropout": 0.15,
+    "learning_rate": 0.0002,
+    "weight_decay": 0.0001,
+    "epochs": 200,
+    "patience": 25,
+    "test_size": 0.2,
+    "val_size": 0.2
+  },
+  "training_date": "2025-11-17T22:00:00",
+  "device": "cpu",
+  "pytorch_version": "2.6.0+cpu"
+}
