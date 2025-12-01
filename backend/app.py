@@ -173,8 +173,8 @@ def monitor_network():
     
     while True:
         try:
-            # Add shorter delay between detections for faster testing
-            delay = random.uniform(2, 4)
+            # Waiting time between detections: 25-23 seconds
+            delay = random.uniform(23, 25)
             print(f"[Monitor] Waiting {delay:.1f}s before next detection...", flush=True)
             time.sleep(delay)
             
@@ -227,8 +227,6 @@ def monitor_network():
                     log_threat(db_threat)
                 except Exception as db_err:
                     print(f"  Database error: {db_err}", flush=True)
-            else:
-                print(f"✓ BENIGN traffic | {threat['source_ip']:20} | {threat['dest_ip']}", flush=True)
             
             # Emit to connected clients
             try:
